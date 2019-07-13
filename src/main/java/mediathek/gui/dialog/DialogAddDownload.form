@@ -131,19 +131,9 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="jCheckBoxSubtitle" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jCheckBoxInfodatei" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="143" max="32767" attributes="0"/>
-                                  <Component id="jCheckBoxPfadSpeichern" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jTextFieldName" max="32767" attributes="2"/>
-                          </Group>
+                          <Component id="jTextFieldName" max="32767" attributes="2"/>
                       </Group>
+                      <Component id="jPanel2" alignment="1" pref="542" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -170,12 +160,7 @@
                       <Component id="jTextFieldName" linkSize="4" alignment="2" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jCheckBoxPfadSpeichern" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBoxInfodatei" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jCheckBoxSubtitle" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -226,16 +211,6 @@
             <Property name="toolTipText" type="java.lang.String" value="History l&#xf6;schen"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxPfadSpeichern">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Zielpfad speichern"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxInfodatei">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Infodatei anlegen: &quot;Filmname.txt&quot;"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabelSet">
           <Properties>
             <Property name="text" type="java.lang.String" value="Set:"/>
@@ -247,11 +222,30 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxSubtitle">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Untertitel speichern: &quot;Filmname.xxx&quot;"/>
-          </Properties>
-        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="2"/>
+            <Property name="rows" type="int" value="2"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxInfodatei">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Infodatei anlegen: &quot;Filmname.txt&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxPfadSpeichern">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Zielpfad speichern"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxSubtitle">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Untertitel speichern: &quot;Filmname.xxx&quot;"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanelSize">
@@ -263,34 +257,7 @@
         </Property>
       </Properties>
 
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jRadioButtonAufloesungHd" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jRadioButtonAufloesungHoch" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jRadioButtonAufloesungKlein" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jRadioButtonAufloesungHd" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jRadioButtonAufloesungHoch" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jRadioButtonAufloesungKlein" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-      </Layout>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
       <SubComponents>
         <Component class="javax.swing.JRadioButton" name="jRadioButtonAufloesungHd">
           <Properties>
